@@ -1,0 +1,6 @@
+nodes:
+  - name: test3
+    type: javaprocess
+    config:
+      classpath: ./libs/*
+      java.class: ace.gjh.TestAzkaban

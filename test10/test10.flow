@@ -1,0 +1,10 @@
+config:
+  user.to.proxy: azkaban
+  failure.emails: XXXXXXX@163.com
+  success.emails: XXXXXXX@163.com
+  notify.emails: XXXXXXX@163.com
+nodes:
+  - name: test10
+    type: command
+    config:
+      command: sh ./bin/createfile.sh

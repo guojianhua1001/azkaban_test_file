@@ -1,0 +1,12 @@
+nodes:
+  - name: giveValue
+    type: command
+    config:
+      command: sh ./bin/givevalue.sh
+  
+  - name: test8
+    type: command
+    config:
+      command: echo ${start}' ~ '${end}
+    dependsOn:
+      - giveValue

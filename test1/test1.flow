@@ -1,0 +1,6 @@
+nodes:
+  - name: test1
+    type: command
+    config:
+      command: echo 'Hello Azkaban!'
+      command.1: echo 'Hello World!'

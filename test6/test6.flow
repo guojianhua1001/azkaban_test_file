@@ -1,0 +1,5 @@
+nodes:
+  - name: test6
+    type: command
+    config:
+      command: echo "My Message-- name:"${name}",age:"${age}

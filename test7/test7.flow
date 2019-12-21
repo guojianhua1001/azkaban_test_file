@@ -1,0 +1,5 @@
+nodes:
+  - name: test7
+    type: command
+    config:
+      command: sh ./bin/needvalue.sh ${name} ${sex}

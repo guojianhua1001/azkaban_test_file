@@ -1,0 +1,26 @@
+nodes:
+  - name: node4
+    type: noop
+    dependsOn:
+      - node1
+      - node2
+  - name: node1
+    type: command
+    config:
+      command: echo 'I am node1, I depend on node3.'
+    dependsOn:
+      - node3
+  - name: node2
+    type: command
+    config:
+      command: echo 'I am node2.'
+  - name: node3
+    type: command
+    config:
+      command: echo 'I am node3.'
+  - name: test4
+    type: command
+    config:
+      command: echo 'I am test4.'
+    dependsOn:
+      - node4
