@@ -1,3 +1,4 @@
+---
 config:
   user.to.proxy: azkaban
   failure.emails: XXXXXXX@163.com
